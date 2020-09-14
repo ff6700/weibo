@@ -11,6 +11,7 @@
         <a href="{{ route('users.show', $user) }}">
           {{ $user->name }}
         </a>
+     @include('users._user')
       </div>
     @endforeach
   </div>
