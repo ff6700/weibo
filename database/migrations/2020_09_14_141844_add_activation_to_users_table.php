@@ -15,7 +15,7 @@ class AddActivationToUsersTable extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             //
-            $table->string('activation_token')->nullable();
+            //$table->string('activation_token')->nullable();
             $table->tinyInteger('activated')->default(0);
         });
     }
